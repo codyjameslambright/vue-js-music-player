@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  background-image: url('assets/city-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.song-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.song-title span {
+  font-weight: 300;
+  font-size: 20px;
+  display: block;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+button {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.play, .pause {
+  font-size: 22px;
+  padding: 15px 25px;
+  margin: 0px 15px;
+  border-radius: 8px;
+  color: #FFF;
+  background-color: #32CD32;
+}
+
+.next, .prev {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0px 15px;
+  border-radius: 6px;
+  color: #FFF;
+  background-color: #4169e1;
+}
+
+.playlist {
+  padding: 30px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.playlist h3 {
+  color: #fff;
+  border: 1px solid #4169e1;
+  padding: 15px 0;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.playlist .song {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.playlist .song:hover {
+  color: #32CD32;
+}
+
+.playlist .song.playing {
+  color: #FFF;
+  background-color: #32CD32;
+}
